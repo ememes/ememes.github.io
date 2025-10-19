@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osmanlıca Çalış - Privacy Policy</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; max-width: 800px;">
+    <h1>Osmanlıca Çalış - Gizlilik Politikası</h1>
+
+    <p>Osmanlıca Çalış uygulaması ("biz", "uygulama") kullanıcılarının gizliliğine önem verir. Bu gizlilik politikası, uygulamanın topladığı veriler, nasıl kullanıldığı ve kullanıcı hakları hakkında bilgi verir.</p>
+
+    <h2>1. Toplanan Veriler</h2>
+    <p>Uygulama kendi başına kişisel veri toplamaz. Ancak, uygulama içinde gösterilen reklamlar (AdMob) aracılığıyla bazı veriler üçüncü taraflarca toplanabilir:</p>
+    <ul>
+        <li>Device ID (Cihaz Kimliği)</li>
+        <li>Advertising Data (Reklam Verisi)</li>
+        <li>Product Interaction / Usage Data (Uygulama Kullanım Verisi)</li>
+    </ul>
+
+    <h2>2. Verilerin Kullanımı</h2>
+    <p>Toplanan veriler yalnızca üçüncü taraf reklam sağlayıcıları tarafından, kullanıcıya uygun reklam göstermek ve reklam performansını ölçmek için kullanılır. Uygulama, bu verileri kendisi doğrudan reklam veya pazarlama amacıyla kullanmaz.</p>
+
+    <h2>3. Takip ve İzleme</h2>
+    <p>Uygulama, App Tracking Transparency (ATT) çerçevesinde kullanıcıdan izni olmadan kişisel olarak kullanıcıyı takip etmez. Ancak, reklam sağlayıcıları Device ID ve reklam verilerini kullanıcıya özel reklam göstermek amacıyla kullanabilir.</p>
+
+    <h2>4. Veri Paylaşımı</h2>
+    <p>Uygulama kendi başına veri paylaşmaz. Sadece üçüncü taraf reklam sağlayıcıları, reklam hizmetlerini sunmak amacıyla verileri işleyebilir.</p>
+
+    <h2>5. Kullanıcı Hakları</h2>
+    <p>Kullanıcılar, reklam kişiselleştirmeyi kapatabilir veya App Tracking Transparency izinlerini yönetebilir. Daha fazla bilgi için lütfen cihaz ayarlarınızı kontrol ediniz.</p>
+
+    <h2>6. Değişiklikler</h2>
+    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Güncellemeler, bu sayfada yayınlanacaktır.</p>
+
+    <p>Son güncelleme: 19 Ekim 2025</p>
+
+    <p>İletişim: <a href="mailto:info@example.com">info@example.com</a></p>
+</body>
+</html>
