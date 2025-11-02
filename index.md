@@ -131,10 +131,10 @@
       <h2>📩 İletişim</h2>
       <p>Bize ulaşmak için aşağıdaki adresi kullanabilirsiniz:</p>
       <ul class="contact-info">
-        <li><strong>E-posta:</strong> <a href="mailto:destek@ememes.github.io?subject=Ememes%20Destek">destek@ememes.github.io</a></li>
+        <li><strong>E-posta:</strong> <a href="mailto:mertslvmert@gmail.com?subject=Ememes%20Destek">mertslvmert@gmail.com</a></li>
         <li><strong>Uygulama Adı:</strong> Ememes</li>
       </ul>
-      <a href="mailto:destek@ememes.github.io?subject=Ememes%20Destek" class="button">E-posta Gönder</a>
+      <a href="mailto:mertslvmert@gmail.com?subject=Ememes%20Destek" class="button">E-posta Gönder</a>
     </section>
 
     <section class="card faq">
