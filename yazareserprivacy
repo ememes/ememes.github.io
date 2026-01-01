@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gizlilik Politikası</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h1>Gizlilik Politikası</h1>
+
+<p>
+Bu gizlilik politikası, <strong>Türk Edebiyatı Öğren</strong> uygulamasının kullanıcılarından hangi bilgilerin toplandığını, bu bilgilerin nasıl kullanıldığını ve nasıl korunduğunu açıklamaktadır.
+</p>
+
+<h2>Toplanan Bilgiler</h2>
+
+<p>
+Uygulama, kullanıcıdan doğrudan kimlik bilgisi (ad, soyad, e-posta adresi vb.) talep etmez.
+</p>
+
+<p>
+Ancak uygulamanın performansını artırmak ve reklam hizmetleri sunmak amacıyla bazı bilgiler otomatik olarak toplanabilir:
+</p>
+
+<ul>
+    <li>Cihaz bilgileri (cihaz türü, işletim sistemi sürümü)</li>
+    <li>Uygulama kullanım verileri (hangi bölümlerin kullanıldığı, oturum süresi)</li>
+    <li>Hata ve performans verileri</li>
+    <li>Reklam tanımlayıcıları (IDFA / cihaz reklam kimliği)</li>
+</ul>
+
+<h2>Reklamlar</h2>
+
+<p>
+Uygulama, üçüncü taraf reklam hizmetleri (örneğin Google AdMob) kullanabilir.  
+Bu hizmetler, kullanıcılara daha alakalı reklamlar gösterebilmek için cihaz reklam kimliğini kullanabilir.
+</p>
+
+<p>
+Apple’ın App Tracking Transparency (ATT) politikası gereği, gerekli durumlarda kullanıcıdan izin alınır.
+</p>
+
+<h2>Analitik ve Performans</h2>
+
+<p>
+Uygulama, kullanıcı deneyimini geliştirmek amacıyla anonim analiz verileri toplayabilir.  
+Bu veriler, uygulamanın hangi bölümlerinin daha çok kullanıldığını anlamak ve hataları tespit etmek için kullanılır.
+</p>
+
+<h2>Çocukların Gizliliği</h2>
+
+<p>
+Uygulama, 13 yaş altındaki çocuklardan bilerek kişisel veri toplamaz.  
+Eğer bir ebeveyn veya vasi, çocuğuna ait kişisel verilerin uygulama tarafından toplandığını düşünüyorsa, geliştirici ile iletişime geçebilir.
+</p>
+
+<h2>Veri Paylaşımı</h2>
+
+<p>
+Toplanan veriler hiçbir şekilde üçüncü şahıslarla satılmaz.  
+Veriler yalnızca reklam ve analiz hizmetleri sağlayan üçüncü taraflarla, hizmetin gerektirdiği ölçüde paylaşılabilir.
+</p>
+
+<h2>Güvenlik</h2>
+
+<p>
+Kullanıcı verilerinin güvenliği bizim için önemlidir.  
+Uygulama, verilerin korunması için makul teknik ve idari önlemleri almaktadır.
+</p>
+
+<h2>Gizlilik Politikasındaki Değişiklikler</h2>
+
+<p>
+Bu gizlilik politikası zaman zaman güncellenebilir.  
+Yapılan değişiklikler bu sayfada yayınlanır.
+</p>
+
+<h2>İletişim</h2>
+
+<p>
+Gizlilik politikası ile ilgili sorularınız için bizimle iletişime geçebilirsiniz:
+</p>
+
+<p>
+<strong>Geliştirici:</strong> [Geliştirici Adı]<br>
+<strong>E-posta:</strong> [destek@email.com]
+</p>
+
+<p>
+Son güncelleme tarihi: 01.01.2026
+</p>
+
+</body>
+</html>
