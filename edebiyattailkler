@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Gizlilik Politikası</h1>
+    <p>Son güncelleme: 2026</p>
+
+    <p>Bu gizlilik politikası, <strong>Edebiyatta İlkler</strong> mobil uygulamasını kullandığınızda bilgilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.</p>
+
+    <h2>1. Toplanan Bilgiler</h2>
+    <p>Uygulamamız kullanıcıdan doğrudan kişisel veri toplamaz. Ancak aşağıdaki türde bilgiler dolaylı olarak toplanabilir:</p>
+    <ul>
+        <li>Cihaz bilgileri (model, işletim sistemi)</li>
+        <li>Kullanım verileri (uygulama içi etkileşimler)</li>
+        <li>Reklam servisleri aracılığıyla anonim veriler</li>
+    </ul>
+
+    <h2>2. Bilgilerin Kullanımı</h2>
+    <p>Toplanan veriler şu amaçlarla kullanılabilir:</p>
+    <ul>
+        <li>Uygulamanın performansını geliştirmek</li>
+        <li>Kullanıcı deneyimini iyileştirmek</li>
+        <li>Hataları analiz etmek</li>
+    </ul>
+
+    <h2>3. Üçüncü Taraf Hizmetler</h2>
+    <p>Uygulamamız üçüncü taraf hizmetler kullanabilir (örneğin reklam sağlayıcılar). Bu hizmetler kendi gizlilik politikalarına göre veri toplayabilir.</p>
+
+    <h2>4. Veri Güvenliği</h2>
+    <p>Kullanıcı verilerini korumak için gerekli teknik ve idari önlemler alınmaktadır. Ancak internet üzerinden veri iletiminin tamamen güvenli olduğu garanti edilemez.</p>
+
+    <h2>5. Çocukların Gizliliği</h2>
+    <p>Uygulamamız 13 yaş altındaki çocuklara yönelik değildir ve bilerek veri toplamaz.</p>
+
+    <h2>6. Gizlilik Politikasındaki Değişiklikler</h2>
+    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Değişiklikler bu sayfa üzerinden yayınlanacaktır.</p>
+
+    <h2>7. İletişim</h2>
+    <p>Herhangi bir sorunuz varsa bizimle iletişime geçebilirsiniz:</p>
+    <p><strong>Geliştirici:</strong> Mustafa Mert Selvi</p>
+    <p><strong>Email:</strong> mertslvmert@gmail.com</p>
+
+</div>
+
+</body>
+</html>
