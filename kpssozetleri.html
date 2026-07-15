@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gizlilik Politikası — KPSS Özetleri</title>
+  <style>
+    :root {
+      --gold: #FFC531;
+      --gold-deep: #F5A400;
+      --navy: #1B2340;
+      --brand: #3B82F6;
+      --success: #10B981;
+      --surface: #FFFFFF;
+      --canvas: #F4F6FB;
+      --text: #1E293B;
+      --text-secondary: #64748B;
+      --radius: 18px;
+      --shadow: 0 18px 50px rgba(27, 35, 64, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--canvas);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+      background: linear-gradient(145deg, #FFF8E7 0%, #F4F6FB 35%, #E8F0FF 100%);
+    }
+
+    .bg-circle {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.45;
+    }
+
+    .bg-circle.one {
+      width: 320px;
+      height: 320px;
+      background: var(--gold);
+      top: -80px;
+      right: -60px;
+    }
+
+    .bg-circle.two {
+      width: 280px;
+      height: 280px;
+      background: var(--brand);
+      bottom: 10%;
+      left: -80px;
+    }
+
+    .bg-circle.three {
+      width: 200px;
+      height: 200px;
+      background: var(--success);
+      bottom: -40px;
+      right: 20%;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 18px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 30px rgba(245, 164, 0, 0.35);
+      font-size: 34px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .hero .subtitle {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(59, 130, 246, 0.12);
+      color: var(--brand);
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px 30px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card h2 .icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .icon.blue { background: rgba(59, 130, 246, 0.14); }
+    .icon.gold { background: rgba(255, 197, 49, 0.22); }
+    .icon.green { background: rgba(16, 185, 129, 0.14); }
+    .icon.red { background: rgba(239, 68, 68, 0.12); }
+    .icon.purple { background: rgba(139, 92, 246, 0.14); }
+
+    .card p,
+    .card li {
+      color: var(--text-secondary);
+      font-size: 0.97rem;
+    }
+
+    .card p + p {
+      margin-top: 10px;
+    }
+
+    .card ul {
+      margin: 10px 0 0 20px;
+    }
+
+    .card li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: linear-gradient(90deg, rgba(255, 197, 49, 0.18), rgba(59, 130, 246, 0.10));
+      border-left: 4px solid var(--gold-deep);
+      padding: 14px 16px;
+      border-radius: 0 12px 12px 0;
+      margin-top: 12px;
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, var(--navy) 0%, #2A3658 100%);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 28px 30px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-box h2 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .contact-box p {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      color: var(--gold);
+      font-weight: 600;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      transition: background 0.2s;
+    }
+
+    .contact-box a:hover {
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 28px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 28px 16px 48px; }
+      .card { padding: 22px 20px; }
+      .contact-box { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg">
+    <div class="bg-circle one"></div>
+    <div class="bg-circle two"></div>
+    <div class="bg-circle three"></div>
+  </div>
+
+  <div class="container">
+    <header class="hero">
+      <div class="logo">📚</div>
+      <h1>Gizlilik Politikası</h1>
+      <p class="subtitle">KPSS Özetleri uygulaması</p>
+      <span class="badge">Son güncelleme: 15 Temmuz 2026</span>
+    </header>
+
+    <section class="card">
+      <h2><span class="icon gold">👋</span> Giriş</h2>
+      <p>
+        Bu gizlilik politikası, <strong>Mustafa Mert Selvi</strong> tarafından geliştirilen
+        <strong>KPSS Özetleri</strong> iOS uygulamasının kişisel verilerinizi nasıl işlediğini açıklar.
+        Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.
+      </p>
+      <div class="highlight">
+        KPSS Özetleri bir hesap oluşturmanızı gerektirmez ve kişisel bilgilerinizi toplamak için tasarlanmamıştır.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2><span class="icon blue">📱</span> Toplanan Veriler</h2>
+      <p>Uygulama aşağıdaki verileri <strong>yalnızca cihazınızda</strong> saklar:</p>
+      <ul>
+        <li>Öğrenilen kartlar ve favoriler</li>
+        <li>Test sonuçları ve yanlış cevaplanan sorular</li>
+        <li>Günlük hedef, çalışma serisi ve ilerleme bilgileri</li>
+        <li>Titreşim geri bildirimi tercihi</li>
+      </ul>
+      <p style="margin-top: 12px;">
+        Bu veriler yalnızca uygulama deneyiminizi kişiselleştirmek için kullanılır ve sunucularımıza gönderilmez.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="icon purple">📢</span> Reklamlar</h2>
+      <p>
+        Uygulama, Google AdMob aracılığıyla geçiş (interstitial) reklamlar gösterebilir.
+        Reklam gösterimi sırasında Google ve reklam ortakları, cihaz tanımlayıcıları ve kullanım verileri gibi
+        bilgileri kendi gizlilik politikalarına uygun şekilde işleyebilir.
+      </p>
+      <p>
+        Google'ın veri işleme uygulamaları hakkında daha fazla bilgi için
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a>
+        sayfasını inceleyebilirsiniz.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="icon red">🔒</span> İzleme İzni (ATT)</h2>
+      <p>
+        iOS cihazlarda uygulama, reklamların size daha uygun olması amacıyla
+        <strong>App Tracking Transparency (ATT)</strong> izni isteyebilir.
+        Bu izni vermek zorunlu değildir; reddetseniz bile uygulamayı kullanmaya devam edebilirsiniz.
+      </p>
+      <p>
+        İzin tercihinizi istediğiniz zaman iPhone Ayarlar → Gizlilik ve Güvenlik → İzleme menüsünden değiştirebilirsiniz.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="icon green">🛡️</span> Veri Güvenliği ve Saklama</h2>
+      <p>
+        Tüm ilerleme verileri cihazınızdaki yerel depolamada (UserDefaults) tutulur.
+        Uygulamayı silerseniz bu veriler de cihazınızdan kaldırılır.
+      </p>
+      <p>
+        Ayarlar bölümündeki <strong>«İlerlemeyi Sıfırla»</strong> seçeneği ile verilerinizi istediğiniz zaman silebilirsiniz.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="icon blue">👶</span> Çocukların Gizliliği</h2>
+      <p>
+        KPSS Özetleri, 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamaz.
+        Ebeveyn veya veli iseniz ve çocuğunuzun veri paylaştığını düşünüyorsanız bizimle iletişime geçebilirsiniz.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="icon gold">🔄</span> Politika Değişiklikleri</h2>
+      <p>
+        Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler yapıldığında
+        bu sayfadaki «Son güncelleme» tarihi yenilenir. Güncel metni düzenli olarak kontrol etmenizi öneririz.
+      </p>
+    </section>
+
+    <section class="contact-box">
+      <h2>İletişim</h2>
+      <p>
+        Gizlilik politikası veya verileriniz hakkında sorularınız için bizimle iletişime geçebilirsiniz.
+      </p>
+      <p><strong>Mustafa Mert Selvi</strong></p>
+      <a href="mailto:mertslvmert@gmail.com">mertslvmert@gmail.com</a>
+    </section>
+
+    <footer class="footer">
+      © 2026 Mustafa Mert Selvi · KPSS Özetleri
+    </footer>
+  </div>
+</body>
+</html>
