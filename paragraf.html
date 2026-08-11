@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası — Paragraf Çalış</title>
+  <style>
+    :root {
+      --cream: #faf6f0;
+      --cream-dark: #f0e8dc;
+      --terracotta: #c4704b;
+      --terracotta-dark: #a85a38;
+      --ink: #2c2419;
+      --ink-muted: #6b5f52;
+      --sage: #7a9b8a;
+      --white: #ffffff;
+      --shadow: rgba(44, 36, 25, 0.08);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(160deg, var(--cream) 0%, var(--cream-dark) 100%);
+      color: var(--ink);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--terracotta);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 5vw, 38px);
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    h1 span {
+      color: var(--terracotta);
+    }
+
+    .subtitle {
+      color: var(--ink-muted);
+      font-size: 15px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .meta-item {
+      background: var(--white);
+      border: 1px solid rgba(196, 112, 75, 0.15);
+      border-radius: 10px;
+      padding: 8px 16px;
+      font-size: 13px;
+      color: var(--ink-muted);
+    }
+
+    .meta-item strong {
+      color: var(--terracotta);
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 24px var(--shadow);
+      padding: 32px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      color: var(--terracotta-dark);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--cream-dark);
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 20px 0 8px;
+    }
+
+    p, li {
+      font-size: 15px;
+      color: var(--ink-muted);
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--terracotta);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight {
+      background: rgba(196, 112, 75, 0.08);
+      border-left: 3px solid var(--terracotta);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+
+    .highlight p {
+      margin: 0;
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 16px 0;
+    }
+
+    th {
+      background: var(--cream);
+      color: var(--ink);
+      font-weight: 600;
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 2px solid var(--cream-dark);
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--cream-dark);
+      color: var(--ink-muted);
+      vertical-align: top;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 13px;
+      color: var(--ink-muted);
+    }
+
+    footer a {
+      color: var(--sage);
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 22px; }
+      table { font-size: 13px; }
+      th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <div class="badge">Gizlilik Politikası</div>
+      <h1>Paragraf <span>Çalış</span></h1>
+      <p class="subtitle">Kişisel verilerinizin korunması bizim için önemlidir.</p>
+      <div class="meta">
+        <div class="meta-item"><strong>Son güncelleme:</strong> 11 Ağustos 2026</div>
+        <div class="meta-item"><strong>Uygulama:</strong> Paragraf Çalış (iOS)</div>
+      </div>
+    </header>
+
+    <div class="card">
+      <h2>1. Giriş</h2>
+      <p>
+        Bu Gizlilik Politikası, <strong>Paragraf Çalış</strong> mobil uygulamasını
+        (“Uygulama”) kullandığınızda kişisel verilerinizin nasıl toplandığını,
+        kullanıldığını ve korunduğunu açıklar. Uygulamayı kullanarak bu politikayı
+        kabul etmiş sayılırsınız.
+      </p>
+      <p>
+        Uygulama, paragraf okuma ve soru çözme pratiği sunan bir eğitim uygulamasıdır.
+        Hesap oluşturmanız veya kişisel bilgilerinizi girmeniz gerekmez.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. Veri Sorumlusu</h2>
+      <p>Kişisel verilerinizin veri sorumlusu:</p>
+      <div class="highlight">
+        <p>
+          <strong>Mustafa Mert Selvi</strong><br />
+          E-posta: <a href="mailto:mertslvmert@gmail.com">mertslvmert@gmail.com</a>
+        </p>
+      </div>
+      <p>
+        Gizlilik ile ilgili sorularınız ve talepleriniz için yukarıdaki e-posta
+        adresinden bize ulaşabilirsiniz.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>3. Toplanan Veriler</h2>
+
+      <h3>3.1. Cihazınızda Yerel Olarak Saklanan Veriler</h3>
+      <p>
+        Uygulama, oyun deneyiminizi sürdürmek için aşağıdaki verileri yalnızca
+        <strong>cihazınızda</strong> (UserDefaults aracılığıyla) saklar.
+        Bu veriler sunucularımıza gönderilmez:
+      </p>
+      <ul>
+        <li>Seviye ilerleme durumu ve tamamlanan seviyeler</li>
+        <li>En iyi skorlar ve deneme sayıları</li>
+        <li>Quiz cevaplarına ait oturum anlık görüntüleri (inceleme için)</li>
+        <li>Toplam doğru/yanlış cevap sayıları ve pratik serisi</li>
+        <li>Karanlık mod tercihi ve arayüz ipucu görüntüleme durumu</li>
+      </ul>
+
+      <h3>3.2. Reklam ve İzleme Verileri</h3>
+      <p>
+        Uygulama, reklam göstermek için <strong>Google AdMob</strong> hizmetini kullanır.
+        AdMob; cihaz tanımlayıcısı, IP adresi, reklam etkileşimleri ve benzeri teknik
+        verileri kendi gizlilik politikası kapsamında işleyebilir.
+      </p>
+      <p>
+        Kişiselleştirilmiş reklamlar için Apple’ın
+        <strong>App Tracking Transparency (ATT)</strong> izin diyaloğu gösterilir.
+        Bu izni vermemeyi seçebilirsiniz; uygulama yine de çalışmaya devam eder,
+        ancak reklamlar kişiselleştirilmeyebilir.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Veri Türü</th>
+            <th>Amaç</th>
+            <th>Konum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>İlerleme ve skor verileri</td>
+            <td>Oyun deneyimi</td>
+            <td>Yalnızca cihaz</td>
+          </tr>
+          <tr>
+            <td>Görünüm tercihleri</td>
+            <td>Arayüz kişiselleştirme</td>
+            <td>Yalnızca cihaz</td>
+          </tr>
+          <tr>
+            <td>Reklam/izleme verileri</td>
+            <td>Reklam sunumu ve ölçümü</td>
+            <td>Google AdMob</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3.3. Toplamadığımız Veriler</h3>
+      <ul>
+        <li>Ad, soyad, telefon numarası veya posta adresi</li>
+        <li>E-posta adresi (siz bize yazmadıkça)</li>
+        <li>Konum bilgisi (bilinçli olarak toplanmaz)</li>
+        <li>Kamera, mikrofon veya fotoğraf galerisi erişimi</li>
+        <li>Kullanıcı hesabı veya şifre</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Verilerin Kullanım Amaçları</h2>
+      <ul>
+        <li>Seviye ilerlemenizi ve skorlarınızı kaydetmek</li>
+        <li>Tamamlanan seviyeleri inceleme özelliğini sunmak</li>
+        <li>Görünüm tercihlerinizi hatırlamak</li>
+        <li>Uygulamayı ücretsiz tutmak için reklam göstermek</li>
+        <li>Uygulama performansını ve kullanıcı deneyimini iyileştirmek</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>5. Üçüncü Taraf Hizmetler</h2>
+      <p>Uygulama aşağıdaki üçüncü taraf hizmetleri kullanır:</p>
+      <ul>
+        <li>
+          <strong>Google AdMob</strong> — Reklam sunumu.
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a>
+        </li>
+        <li>
+          <strong>Apple iOS</strong> — Uygulama izleme izni (ATT) yönetimi.
+          <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Gizlilik Politikası</a>
+        </li>
+      </ul>
+      <p>
+        Bu hizmet sağlayıcılar kendi gizlilik politikalarına tabidir ve verilerinizi
+        kendi amaçları doğrultusunda işleyebilir.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. Veri Saklama ve Silme</h2>
+      <p>
+        Yerel olarak saklanan tüm ilerleme ve tercih verileri cihazınızda kalır.
+        Uygulamayı cihazınızdan <strong>sildiğinizde</strong> bu veriler de silinir.
+      </p>
+      <p>
+        Uygulama içindeki <strong>Ayarlar → İlerlemeyi Sıfırla</strong> seçeneğiyle
+        oyun ilerlemenizi manuel olarak da silebilirsiniz.
+      </p>
+      <p>
+        Reklam verilerinin saklama süresi Google AdMob politikalarına tabidir.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. Çocukların Gizliliği</h2>
+      <p>
+        Uygulama genel kitleye yöneliktir ve eğitim amaçlıdır. Bilerek 13 yaşın
+        altındaki çocuklardan kişisel bilgi toplamıyoruz. Ebeveyn veya vasiler,
+        çocuklarının verileriyle ilgili endişeleri varsa bizimle iletişime geçebilir.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>8. Haklarınız (KVKK)</h2>
+      <p>
+        6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında aşağıdaki
+        haklara sahipsiniz:
+      </p>
+      <ul>
+        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+        <li>İşlenmişse buna ilişkin bilgi talep etme</li>
+        <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+        <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
+        <li>Kanuna uygun olarak silinmesini veya yok edilmesini isteme</li>
+        <li>İşlemenin yalnızca otomatik sistemlerle analiz edilmesine itiraz etme</li>
+      </ul>
+      <p>
+        Bu haklarınızı kullanmak için
+        <a href="mailto:mertslvmert@gmail.com">mertslvmert@gmail.com</a>
+        adresine yazabilirsiniz. Talebinize en geç 30 gün içinde yanıt verilir.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>9. Güvenlik</h2>
+      <p>
+        Verilerinizi korumak için makul teknik ve idari önlemler alıyoruz.
+        Yerel veriler cihazınızın güvenli depolama alanında tutulur.
+        İnternet üzerinden kişisel veri aktarımı yapılmamaktadır.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>10. Politika Değişiklikleri</h2>
+      <p>
+        Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler
+        yapıldığında bu sayfadaki “Son güncelleme” tarihi yenilenir.
+        Değişikliklerden sonra uygulamayı kullanmaya devam etmeniz, güncellenmiş
+        politikayı kabul ettiğiniz anlamına gelir.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>11. İletişim</h2>
+      <p>Gizlilik politikası veya kişisel verileriniz hakkında sorularınız için:</p>
+      <div class="highlight">
+        <p>
+          <strong>Mustafa Mert Selvi</strong><br />
+          E-posta: <a href="mailto:mertslvmert@gmail.com">mertslvmert@gmail.com</a><br />
+          Uygulama: Paragraf Çalış
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Mustafa Mert Selvi — Paragraf Çalış</p>
+      <p style="margin-top:8px;">
+        <a href="mailto:mertslvmert@gmail.com">mertslvmert@gmail.com</a>
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
