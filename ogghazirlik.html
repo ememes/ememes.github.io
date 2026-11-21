@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gizlilik Politikası · ÖGG Kartları</title>
+  <meta name="description" content="ÖGG Kartları iOS uygulamasının gizlilik politikası. Veri sorumlusu: Mert Selvi.">
+  <meta name="theme-color" content="#152F46">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23152F46'/%3E%3Cpath d='M16 6.5l7 2.4v6.3c0 4.4-2.9 8.3-7 9.8-4.1-1.5-7-5.4-7-9.8V8.9L16 6.5z' fill='%23BDEBD2'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --navy: #152F46;
+      --ink: #132636;
+      --muted: #5c6d78;
+      --teal: #247D68;
+      --mint: #BDEBD2;
+      --orange: #C16C39;
+      --paper: #F6F5F1;
+      --card: #ffffff;
+      --line: rgba(21, 47, 70, 0.1);
+      --shadow: 0 18px 50px rgba(19, 38, 54, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(900px 420px at 100% -10%, rgba(189, 235, 210, 0.55), transparent 60%),
+        radial-gradient(700px 380px at -10% 0%, rgba(193, 108, 57, 0.12), transparent 55%),
+        var(--paper);
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--teal); }
+    a:hover { color: var(--navy); }
+    .wrap { width: min(820px, calc(100% - 32px)); margin: 0 auto; }
+    header.hero {
+      background: var(--navy);
+      color: #f7f4ee;
+      padding: 48px 0 56px;
+      position: relative;
+      overflow: hidden;
+    }
+    header.hero::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -120px;
+      width: 320px;
+      height: 320px;
+      border: 1px solid rgba(189, 235, 210, 0.25);
+      border-radius: 48px;
+      transform: rotate(18deg);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--mint);
+    }
+    .mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(189, 235, 210, 0.14);
+      display: grid;
+      place-items: center;
+      font-family: Georgia, "Iowan Old Style", Palatino, serif;
+      letter-spacing: 0;
+      color: var(--mint);
+      font-size: 13px;
+    }
+    h1 {
+      font-family: Georgia, "Iowan Old Style", Palatino, serif;
+      font-weight: 600;
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.05;
+      margin: 22px 0 14px;
+      letter-spacing: -0.03em;
+    }
+    .lede { max-width: 62ch; color: rgba(247, 244, 238, 0.82); margin: 0; font-size: 17px; }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+    .pill {
+      border: 1px solid rgba(247, 244, 238, 0.18);
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 13px;
+      color: rgba(247, 244, 238, 0.9);
+    }
+    main { margin-top: -28px; padding-bottom: 72px; position: relative; z-index: 1; }
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      padding: 14px;
+    }
+    .summary article { padding: 18px 16px 16px; border-radius: 16px; background: #f8f7f4; }
+    .summary span {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 6px;
+    }
+    .summary strong { display: block; font-size: 16px; line-height: 1.35; }
+    nav.toc { margin: 22px 0; padding: 8px; }
+    nav.toc ol {
+      list-style: none;
+      margin: 0;
+      padding: 8px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 18px;
+    }
+    nav.toc a {
+      display: block;
+      text-decoration: none;
+      color: var(--ink);
+      padding: 8px 10px;
+      border-radius: 10px;
+    }
+    nav.toc a:hover { background: #f3f7f5; color: var(--teal); }
+    section.block { margin-top: 16px; padding: 28px 28px 8px; }
+    section.block h2 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: Georgia, "Iowan Old Style", Palatino, serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 8px;
+    }
+    .num {
+      width: 32px;
+      height: 32px;
+      flex: 0 0 32px;
+      border-radius: 10px;
+      background: rgba(36, 125, 104, 0.12);
+      color: var(--teal);
+      display: grid;
+      place-items: center;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    section.block p, section.block li { color: #243843; }
+    section.block ul { padding-left: 18px; }
+    section.block li { margin: 6px 0; }
+    .callout {
+      margin: 8px 0 20px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--orange);
+      background: #fbf6f2;
+      border-radius: 0 14px 14px 0;
+    }
+    footer {
+      background: var(--navy);
+      color: rgba(247, 244, 238, 0.78);
+      padding: 28px 0 36px;
+      font-size: 14px;
+    }
+    footer a { color: var(--mint); }
+    @media (max-width: 700px) {
+      .summary, nav.toc ol { grid-template-columns: 1fr; }
+      section.block { padding: 22px 18px 4px; }
+      header.hero { padding-top: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="brand"><span class="mark">ÖGG</span> ÖGG Kartları</div>
+      <h1>Gizlilik Politikası</h1>
+      <p class="lede">Özel güvenlik sınavına hazırlık için bilgi kartları ve doğru–yanlış alıştırmaları sunan iOS uygulaması. Çalışma ilerlemen cihazında kalır. Hesap açılmaz.</p>
+      <div class="meta">
+        <span class="pill">Yürürlük: 21 Kasım 2026</span>
+        <span class="pill">Platform: iOS</span>
+        <span class="pill">Veri sorumlusu: Mert Selvi</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="panel summary">
+      <article><span>Hesap</span><strong>İsim, e-posta veya şifre istenmez.</strong></article>
+      <article><span>İlerleme</span><strong>Kartlar ve skorlar yalnızca cihazda saklanır.</strong></article>
+      <article><span>Reklam</span><strong>Google AdMob geçiş reklamı gösterebilir.</strong></article>
+    </div>
+
+    <nav class="panel toc" aria-label="İçindekiler">
+      <ol>
+        <li><a href="#sorumlu">1. Veri sorumlusu</a></li>
+        <li><a href="#toplama">2. Hangi veriler işlenir</a></li>
+        <li><a href="#cihaz">3. Cihazda kalan bilgiler</a></li>
+        <li><a href="#reklam">4. Reklamlar</a></li>
+        <li><a href="#amac">5. Amaç ve dayanaktan</a></li>
+        <li><a href="#ucuncu">6. Üçüncü taraflar</a></li>
+        <li><a href="#cocuk">7. Çocuklar</a></li>
+        <li><a href="#saklama">8. Saklama ve silme</a></li>
+        <li><a href="#guvenlik">9. Güvenlik</a></li>
+        <li><a href="#haklar">10. Hakların</a></li>
+        <li><a href="#degisiklik">11. Değişiklikler</a></li>
+        <li><a href="#iletisim">12. İletişim</a></li>
+      </ol>
+    </nav>
+
+    <section class="panel block" id="sorumlu">
+      <h2><span class="num">1</span> Veri sorumlusu</h2>
+      <p>ÖGG Kartları, Mert Selvi tarafından geliştirilir. Bu politika, uygulamanın App Store sürümü için geçerlidir. 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında veri sorumlusu Mert Selvi’dir.</p>
+      <p>İletişim: <a href="mailto:mertselvi@gmail.com">mertselvi@gmail.com</a></p>
+    </section>
+
+    <section class="panel block" id="toplama">
+      <h2><span class="num">2</span> Hangi veriler işlenir</h2>
+      <p>Uygulamanın kendi sunucusu yoktur. Geliştirici; adını, e-posta adresini, telefon numaranı, konumunu, kişilerini, fotoğraflarını, mikrofonunu veya kameranı toplamaz. Çalışma içeriği uygulamayla birlikte gelir ve internet olmadan kullanılabilir.</p>
+      <p>Geliştiricinin eline geçen kişisel veri, bu adrese kendiliğinden yazdığın iletilerle sınırlıdır. İleti göndermek zorunlu değildir. Gönderdiğin e-posta, yalnızca sorunu yanıtlamak için okunur ve e-posta hizmetinde saklanır.</p>
+      <div class="callout">Reklam yüklendiğinde teknik veriler geliştiriciye değil, reklam ortağı Google’a gider. Ayrıntı aşağıdaki reklam bölümündedir.</div>
+    </section>
+
+    <section class="panel block" id="cihaz">
+      <h2><span class="num">3</span> Cihazda kalan bilgiler</h2>
+      <p>İlerleme, cihazındaki yerel depolama alanına yazılır ve geliştiriciye gönderilmez. Bu kayıtta şunlar bulunabilir:</p>
+      <ul>
+        <li>Hangi kartları çalıştığın, tekrar zamanları, zorlandığın kartlar ve yer imleri</li>
+        <li>Doğru–yanlış sonuçları, yanlış sorular ve günlük çalışma sayıları</li>
+        <li>Yarım kalan çalışma oturumları</li>
+        <li>Dokunsal geri bildirim ve günlük hedef tercihleri</li>
+        <li>Geçiş reklamının son gösterildiği zaman (üst üste reklam açılmasını sınırlamak için)</li>
+      </ul>
+      <p>Bu bilgiler bir hesapla eşleştirilmez. Uygulamayı silmek yerel kaydı kaldırır. Ayarlar içindeki ilerlemeyi sıfırlama işlemi de aynı kaydı temizler.</p>
+    </section>
+
+    <section class="panel block" id="reklam">
+      <h2><span class="num">4</span> Reklamlar</h2>
+      <p>Yeterli uzunluktaki bir kart çalışması veya doğru–yanlış alıştırması tamamlandığında Google AdMob geçiş reklamı gösterilebilir. Reklam hazır değilse çalışma kapanışı bekletilmez. Açılışta, konu değiştirirken veya soru cevaplarken reklam açılmaz.</p>
+      <p>Uygulama, Apple’ın Uygulama Takibi Şeffaflığı penceresini göstermez ve reklam kimliğine erişim izni istemez. Reklamlar, Google’ın geçerli rıza durumuna göre sunulur. Avrupa Ekonomik Alanı, Birleşik Krallık ve Google’ın mesaj gösterdiği diğer bölgelerde, reklamdan önce Google Kullanıcı Mesajlaşma Platformu rıza ekranı çıkabilir. Google bunu gerekli görürse Ayarlar’da “Reklam gizlilik seçenekleri” görünür ve seçimini oradan değiştirebilirsin.</p>
+      <p>Reklam isteği sırasında Google; IP adresi, cihaz modeli, işletim sistemi, dil, uygulama sürümü, reklam etkileşimleri ve yaklaşık konum türevi gibi teknik verileri işleyebilir. Uygulama, Apple’ın SKAdNetwork altyapısına katılır. Bu yapı, kullanıcı düzeyinde takip kimliği paylaşmadan toplu reklam ölçümü yapılmasına yöneliktir. Geliştirici bu ölçümün ham kayıtlarını almaz.</p>
+      <p>Google’ın kendi açıklaması: <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> ve <a href="https://support.google.com/admob/answer/6128543">AdMob ve kullanıcı gizliliği</a>.</p>
+    </section>
+
+    <section class="panel block" id="amac">
+      <h2><span class="num">5</span> Amaç ve dayanak</h2>
+      <ul>
+        <li>Çalışma ilerlemeni cihazda tutmak ve uygulamayı kullanmana imkân vermek</li>
+        <li>Reklam göstererek uygulamanın ücretsiz sunulmasını sağlamak</li>
+        <li>Rıza gereken bölgelerde reklam tercihini almak ve bu tercihe uymak</li>
+        <li>Bize yazarsan iletini yanıtlamak</li>
+      </ul>
+      <p>Cihazdaki ilerleme, uygulamanın çalışması için işlenir ve cihaz dışına çıkmaz. Reklam verisinin işlenmesi Google’ın hizmet koşulları ve varsa verdiğin rıza kapsamındadır. E-posta ile yazışma, talebini sonuçlandırmak için gerekli olduğu sürece tutulur.</p>
+    </section>
+
+    <section class="panel block" id="ucuncu">
+      <h2><span class="num">6</span> Üçüncü taraflar</h2>
+      <p>Çalışma verin satılmaz, kiralanmaz ve başka bir uygulama geliştiricisiyle paylaşılmaz. Reklam gösterildiğinde teknik veriler Google LLC ve onun reklam ortaklarınca, Google’ın politikasına göre işlenebilir. Bu işleme yurt dışında da yapılabilir.</p>
+      <p>Bize e-posta gönderirsen ileti, e-posta sağlayıcısının sistemlerinde işlenir. Uygulamada ayrıca analiz, çökme raporlama veya ödeme altyapısı bulunmaz.</p>
+    </section>
+
+    <section class="panel block" id="cocuk">
+      <h2><span class="num">7</span> Çocuklar</h2>
+      <p>ÖGG Kartları, özel güvenlik sınavına hazırlananlara yöneliktir ve 13 yaşın altındaki çocuklara yöneltilmez. Bilerek çocuklardan kişisel veri toplanmaz. Böyle bir iletinin ulaştığını düşünüyorsan <a href="mailto:mertselvi@gmail.com">mertselvi@gmail.com</a> adresine yaz; uygunsa ilgili yazışma silinir.</p>
+    </section>
+
+    <section class="panel block" id="saklama">
+      <h2><span class="num">8</span> Saklama ve silme</h2>
+      <ul>
+        <li>Yerel ilerleme, sen sıfırlayana veya uygulamayı silene kadar cihazda kalır.</li>
+        <li>Reklam rızası ve reklam ölçümü, Google ile Apple’ın kendi saklama sürelerine tabidir.</li>
+        <li>Destek e-postaları, yanıtın tamamlanması ve olası bir devam yazışması için gereken süre boyunca tutulur, ardından silinir.</li>
+      </ul>
+      <p>Geliştiricinin elinde çalışma ilerlemenin bir kopyası olmadığı için bu kayıt uzaktan silinemez. Silmek için Ayarlar’dan ilerlemeyi sıfırla veya uygulamayı kaldır.</p>
+    </section>
+
+    <section class="panel block" id="guvenlik">
+      <h2><span class="num">9</span> Güvenlik</h2>
+      <p>İlerleme kaydı cihazının yerel depolamasında durur. Cihaz kilidi ve işletim sistemi güncellemeleri bu kaydın korunmasına yardım eder. İnternet üzerinden bir kullanıcı profili oluşturulmaz. Hiçbir yöntem mutlak güvenlik vaat etmez; cihazını başkasıyla paylaşıyorsan uygulama verisi de o kişi tarafından görülebilir.</p>
+    </section>
+
+    <section class="panel block" id="haklar">
+      <h2><span class="num">10</span> Hakların</h2>
+      <p>KVKK’nın 11. maddesi kapsamında, işlenen kişisel verin hakkında bilgi isteme, düzeltme veya silme talep etme ve işleme amacını öğrenme hakların vardır. Çalışma kaydı geliştiricide bulunmadığı için bu kayda dair talepler cihazda sıfırlama veya uygulamayı silme ile yerine gelir.</p>
+      <p>Reklam verisi için Google’ın gizlilik araçlarını ve uygulamadaki reklam gizlilik seçeneklerini kullanabilirsin. Bize ulaşan bir e-postanın silinmesini istiyorsan <a href="mailto:mertselvi@gmail.com">mertselvi@gmail.com</a> adresine yaz. Başvurular, talebin niteliğine göre en kısa sürede ve yasal süre içinde yanıtlanır. Ayrıca Kişisel Verileri Koruma Kurulu’na şikâyet hakkın saklıdır.</p>
+    </section>
+
+    <section class="panel block" id="degisiklik">
+      <h2><span class="num">11</span> Değişiklikler</h2>
+      <p>Uygulamaya yeni bir veri işleme eklenirse bu sayfa güncellenir ve üstteki yürürlük tarihi değişir. Güncel metin, App Store’da belirtilen gizlilik politikası adresinde yayımlanır. Sayfayı kullanmaya devam etmen, güncel metnin uygulanması anlamına gelir.</p>
+    </section>
+
+    <section class="panel block" id="iletisim">
+      <h2><span class="num">12</span> İletişim</h2>
+      <p>Mert Selvi<br>
+      E-posta: <a href="mailto:mertselvi@gmail.com">mertselvi@gmail.com</a></p>
+      <p>ÖGG Kartları gizlilik politikası · 21 Kasım 2026</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">ÖGG Kartları · Mert Selvi · <a href="mailto:mertselvi@gmail.com">mertselvi@gmail.com</a></div>
+  </footer>
+</body>
+</html>
